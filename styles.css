@@ -1,2 +1,75 @@
+/* Reset some defaults */
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
 
-/* Your CSS Code here. */
+/* Form container */
+form {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+  width: 350px;
+}
+
+/* Labels */
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Inputs & dropdown */
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="date"],
+form input[type="password"],
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+/* Focus effect */
+form input:focus,
+form select:focus {
+  border-color: #007BFF;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,123,255,0.3);
+}
+
+/* Radio buttons inline */
+form input[type="radio"] {
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+/* Submit button */
+form input[type="submit"] {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background: #007BFF;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+form input[type="submit"]:hover {
+  background: #0056b3;
+}
